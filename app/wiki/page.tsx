@@ -1,10 +1,9 @@
 "use client"
 
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Heading1Icon, Heading2Icon, Heading3Icon, Router } from "lucide-react";
-import Link from "next/link";
 import { useRouter } from 'next/navigation'
 import CardWiki from "@/components/card-wiki";
+import { ExternalLink } from "lucide-react";
 
 
 export default function IlyadaPage() {
@@ -34,7 +33,7 @@ export default function IlyadaPage() {
         <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
           <li>Dünya sınırları düzenli olarak genişler.</li>
           {/* TODO: marker'ı görünmez oldu, buraya bak. */}
-          <li className="inline-flex items-center">Bunun bilgisini oyun chatinden veya <Button variant="link" onClick={() => router.push("/wiki/selam")} className="h-fit pt-0 pb-0"><ExternalLink />Discord'taki ilgili kanaldan</Button> kanalından takip edebilirsiniz.</li>
+          <li className="inline-flex items-center">Bunun bilgisini oyun chatinden veya <Button variant="link" onClick={() => router.push("/wiki/selam")} className="h-fit pt-0 pb-0"><ExternalLink />Discord&#39;taki ilgili kanaldan</Button> kanalından takip edebilirsiniz.</li>
         </ul>
       </div>
 
@@ -47,7 +46,7 @@ export default function IlyadaPage() {
           <li>Bir yapı yapmadan önce, siz yokken alanınızın yağmalanmaması için claim almanız gerekmektedir.</li>
           <li>Bir altın kürek oluşturarak claim alabilirsiniz.</li>
           <li>Gelişiminize göre claim bloklarınız artar ve daha büyük bir alanı claiminize dahil edebilirsiniz.</li>
-          <li>Sunucumuzda oynamaya başladığınızda <strong>12x12'lik bir claim alanında</strong> kurulabilirsiniz.
+          <li>Sunucumuzda oynamaya başladığınızda <strong>12x12&#39;lik bir claim alanında</strong> kurulabilirsiniz.
             {/* TODO:  PersesCiklet ile konuşup hem Discord hem site güncellenmeli.*/}
             Oyunda geliştikçe <strong>her 1 saatte 10 claim bloğu</strong> kazanırsınız.</li>
           <li>Claim alanınızın içerisinde kimseye zarar verilemez.</li>
@@ -84,7 +83,7 @@ export default function IlyadaPage() {
           Görev Sistemi
         </h2>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
-          Sunucumuzda görev tamamlayarak iyi miktarda IC ve çeşitli ödüllerin yanında VIP'lik kazanabilirsiniz.
+          Sunucumuzda görev tamamlayarak iyi miktarda IC ve çeşitli ödüllerin yanında VIP&#39;lik kazanabilirsiniz.
         </p>
       </div>
 
@@ -115,7 +114,7 @@ export default function IlyadaPage() {
         </h2>
         <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
           <li>Oyuna başlarken oyuncular PVP olarak mı PVE olarak mı oynayacaklarına karar vermelidir.</li>
-          <li>Bu kararı verdikten sonra oyuncuların PVP'den PVE'ye veya PVE'den PVP'ye geçişleri büyük miktarda kaynağa ve IC'ye mal olmaktadır. Bu nedenle kararınızı verirken iyi düşünmeniz önerilir.</li>
+          <li>Bu kararı verdikten sonra oyuncuların PVP&#39;den PVE&#39;ye veya PVE&#39;den PVP&#39;ye geçişleri büyük miktarda kaynağa ve IC&#39;ye mal olmaktadır. Bu nedenle kararınızı verirken iyi düşünmeniz önerilir.</li>
           <li>PVP oluşumlarına <strong>Klan</strong>, PVE oluşumlarına <strong>Takım</strong> denir.</li>
         </ul>
       </div>

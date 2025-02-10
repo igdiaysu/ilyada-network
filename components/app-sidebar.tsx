@@ -1,8 +1,8 @@
 "use client"
 import * as React from "react"
 
-import { SearchForm } from "@/components/search-form"
-import { VersionSwitcher } from "@/components/version-switcher"
+// import { SearchForm } from "@/components/search-form"
+// import { VersionSwitcher } from "@/components/version-switcher"
 import {
   Sidebar,
   SidebarContent,
