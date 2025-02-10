@@ -6,7 +6,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 
-export function TooltipInline(trigger: any, hover: any) {
+export function TooltipInline(trigger: string, hover: string) {
   return (
     <TooltipProvider>
       <Tooltip>

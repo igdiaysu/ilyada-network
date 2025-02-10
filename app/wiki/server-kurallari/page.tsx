@@ -1,14 +1,8 @@
 "use client"
 
-import { Button } from "@/components/ui/button";
-import { ExternalLink, Heading1Icon, Heading2Icon, Heading3Icon, Router } from "lucide-react";
-import Link from "next/link";
-import { useRouter } from 'next/navigation'
-import CardWiki from "@/components/card-wiki";
 
 
 export default function IlyadaPage() {
-  const router = useRouter()
   return (
     <div className="max-w-screen-lg space-y-8">
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
@@ -33,7 +27,7 @@ export default function IlyadaPage() {
         </ul>
       </div>
 
-      # Cezalandıracağınız Durumlar
+      {/* # Cezalandıracağınız Durumlar
       ## Claim Sistemi
       - Bir oluşumun claimini çevreleyecek şekilde yapı yapı yapmak yasaktır.
       ## Görüntü Kirliliği
@@ -44,7 +38,7 @@ export default function IlyadaPage() {
       ## PVP
       - Savaşta taraf olmayan oyuncuların claim sistemi iptal edilmiş klanların bölgelerine sızarak eşya çalmaları ve yapılara hasar vermeleri benzeri bir çok eylem yasaktır.
 
-      Sunucuya katılan herkes bu kuralları kabul etmiş olup, herhangi birini ihlal ettiği taktirde sunucudan uzaklaştırılacak veya yasaklanacaktır.
+      Sunucuya katılan herkes bu kuralları kabul etmiş olup, herhangi birini ihlal ettiği taktirde sunucudan uzaklaştırılacak veya yasaklanacaktır. */}
 
     </div>
   )

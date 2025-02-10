@@ -3,7 +3,6 @@ import { Items } from "@/components/app-sidebar-types";
 import {
   Swords,
   Shovel,
-  Sprout,
   BookOpen,
   LaptopMinimal,
   BookMarked,

@@ -7,7 +7,7 @@ import {
 import Link from "next/link"
 
 
-export default function CardWiki(title: any) {
+export default function CardWiki() {
   return (
     <div className="grid grid-cols-4 gap-4 max-sm:grid-cols-1">
 
