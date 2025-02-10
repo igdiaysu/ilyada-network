@@ -21,11 +21,11 @@ export function AppSidebar({ items }: { items: Items }) {
   return (
     <Sidebar>
       <SidebarHeader>
-        <VersionSwitcher
+        {/* <VersionSwitcher
           versions={items?.versions ?? []}
           defaultVersion={items?.versions?.[0]}
         />
-        <SearchForm />
+        <SearchForm /> */}
       </SidebarHeader>
       <SidebarContent>
         {/* We create a SidebarGroup for each parent. */}

@@ -6,7 +6,9 @@ import {
   Sprout,
   BookOpen,
   LaptopMinimal,
-  BookMarked
+  BookMarked,
+  Terminal,
+  SquareMousePointer
 } from "lucide-react"
 
 
@@ -23,54 +25,90 @@ export const items: Items = {
       items: [
         {
           title: "Hakkında",
-          url: "#",
+          url: "/wiki",
           icon: BookOpen,
           isActive: true,
         },
         {
           title: "Server Kuralları",
-          url: "/wiki/kurallar",
+          url: "/wiki/server-kurallari",
           icon: BookMarked,
         },
         {
           title: "Discord",
-          url: "/wiki/discord",
+          url: "https://discord.gg/bqhTn5wMeK",
           icon: LaptopMinimal,
         },
       ],
     },
     {
-      title: "Oyun Modu",
+      title: "Genel Bilgiler",
       items: [
         {
-          title: "PVP & PVP",
-          url: "/wiki/oyun-modu",
+          title: "Para Birimi",
+          url: "/wiki#para-birimi",
           icon: BookOpen,
+          isActive: true,
         },
         {
-          title: "PVE Detayları",
-          url: "/wiki/pve",
-          icon: Sprout,
-        },
-        {
-          title: "PVP Detayları",
-          url: "/wiki/pvp",
-          icon: Swords,
+          title: "Dünya Sınırı",
+          url: "/wiki#dunya-siniri",
+          icon: BookMarked,
         },
       ],
     },
     {
-      title: "Claim - Arazi Sahiplenme",
+      title: "Claim Alma - Arazi Sahiplenme",
       items: [
         {
           title: "Claim Hakkında",
-          url: "/wiki/claim-hakkinda",
+          url: "/wiki#claim-hakkinda",
           icon: BookOpen,
         },
         {
           title: "Claim Alma",
-          url: "/wiki/claim-alma",
+          url: "/wiki#claim-alma",
           icon: Shovel,
+        },
+        {
+          title: "Claim Komutları",
+          url: "/wiki#claim-komutlari",
+          icon: Terminal,
+        },
+      ],
+    },
+    {
+      title: "Görev Sistemi",
+      items: [
+        {
+          title: "Görevler Hakkında",
+          url: "/wiki#gorev-sistemi",
+          icon: BookOpen,
+        },
+        {
+          title: "Görev Komutları",
+          url: "/wiki#gorev-komutlari",
+          icon: Terminal,
+        },
+        {
+          title: "Görevleri Açma",
+          url: "/wiki#gorevleri-acma",
+          icon: SquareMousePointer,
+        },
+      ],
+    },
+    {
+      title: "Oyun Stili",
+      items: [
+        {
+          title: "PVE & PVP",
+          url: "/wiki#oyun-stili",
+          icon: BookOpen,
+        },
+        {
+          title: "PVP",
+          url: "/wiki#pvp",
+          icon: Swords,
         },
       ],
     },
