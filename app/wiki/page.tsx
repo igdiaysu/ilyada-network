@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import { useRouter } from 'next/navigation'
-import CardWiki from "@/components/card-wiki";
 import { ExternalLink } from "lucide-react";
 
 
@@ -32,8 +31,8 @@ export default function IlyadaPage() {
         </h2>
         <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
           <li>Dünya sınırları düzenli olarak genişler.</li>
-          {/* TODO: marker'ı görünmez oldu, buraya bak. */}
-          <li className="inline-flex items-center">Bunun bilgisini oyun chatinden veya <Button variant="link" onClick={() => router.push("/wiki/selam")} className="h-fit pt-0 pb-0"><ExternalLink />Discord&#39;taki ilgili kanaldan</Button> kanalından takip edebilirsiniz.</li>
+          {/* FIX: marker'ı görünmez oldu, buraya bak. */}
+          <li className="inline-flex items-center flex-wrap">Bunun bilgisini oyun chatinden veya <Button variant="link" onClick={() => router.push("https://discord.gg/bqhTn5wMeK")} className="h-fit pt-0 pb-0"><ExternalLink />Discord&#39;taki ilgili kanaldan</Button> kanalından takip edebilirsiniz.</li>
         </ul>
       </div>
 
@@ -62,7 +61,8 @@ export default function IlyadaPage() {
           Claim Alma - Arazi Sahiplenme
         </h3>
         <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-          <li></li>
+          <li className="inline-flex items-center flex-wrap">&#34;Nasıl claim alıyoruz?&#34; sorusunu sormadan evvel şu videoyu izleyiniz: <Button variant="link" onClick={() => router.push("/wiki/selam")} className="h-fit pt-0 pb-0"><ExternalLink />Minecraft Claim Nasıl Atılır?</Button>
+          </li>
         </ul>
       </div>
 
@@ -131,16 +131,10 @@ export default function IlyadaPage() {
           <li>PVE takımlara savaş açamazsınız.</li>
           <li>Her klanın alanı claim sistemiyle korunmaktadır. İki klan arasında savaş ilan edilirse bu iki klanın claimleri savaş bitene kadar iptal edilir.</li>
           <li>Savaş başlamadan iki klan da birbirlerine saldıramaz.</li>
-          <li>İki klan arasında savaşın başladığını yalnızca `@Yönetim` rolüne sahip olan yetkililer duyurabilir.</li>
+          <li>İki klan arasında savaşın başladığını yalnızca <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">@Yönetim</code> rolüne sahip olan yetkililer duyurabilir.</li>
           <li>PVP oyunculara zaman zaman bazı kaynak yardımları yapılır. PVE oyuncuların kaynaklarının yağmalanma gibi bir durumu olmadığından bu, kimse açısından haksızlık yaratmaz.</li>
         </ul>
       </div>
-
-
-      <CardWiki />
-
-
-
     </div >
   )
 }
