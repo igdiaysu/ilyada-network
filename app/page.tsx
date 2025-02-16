@@ -260,7 +260,7 @@ function VIPPackages() {
   return (
     <section id="vip-packages" className="flex flex-col items-center py-12 px-4 md:px-8 lg:px-12 bg-gray-200 dark:bg-zinc-800">
       <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-        VIP Packages
+        VIP Paketleri
       </h2>
       <Tabs defaultValue={packages[1].title} className="flex flex-col w-3/4 max-md:w-full">
         <TabsList className="grid w-full grid-cols-3 mb-4">
