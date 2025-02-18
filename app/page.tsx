@@ -338,7 +338,7 @@ function Footer() {
             href="https://github.com/igdiaysu"
             className="text-sm text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
           >
-            Designed by AysArt
+            Designed and Developed by AysArt
           </Link>
 
           {/* <Link
