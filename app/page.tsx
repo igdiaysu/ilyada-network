@@ -317,9 +317,6 @@ function PackageCard({ name, features, price }: { name: string; features: string
       </div>
       <CardFooter className="flex flex-col flex-none gap-3 max-md:gap-2 tracking-wide">
         <div className="w-full text-center text-2xl font-bold tracking-wide">₺{price}</div>
-        <Button variant="outline" className="w-full" asChild>
-          <Link href="https://donate.bynogame.com/aysart">AysArt&#39;ı Destekle</Link>
-        </Button>
         <Button className="w-full" asChild>
           <Link href="https://donate.bynogame.com/persesciklet">PersesCiklet&#39;ı Destekle</Link>
         </Button>
