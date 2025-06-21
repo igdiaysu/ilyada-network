@@ -138,7 +138,7 @@ function VIPPackages() {
           name: "VIP+",
           features: [
             "Evinize ışınlanma.",
-            "Ekstra 250 claim blok.",
+            // "Ekstra 250 claim blok.",
             "İskelet spawner satın alımı açılır.",
             "Seviye 2 spawner yükseltmesi açılır.",
             "Özel spawner % 10 indirimli.",
@@ -152,7 +152,7 @@ function VIPPackages() {
           features: [
             "Evinize ışınlanma.",
             "Arkadaşlarınıza ışınlanma.",
-            "Ekstra 1000 claim blok.",
+            // "Ekstra 1000 claim blok.",
             "Ölünce düşmeyen 27 slotluk sırt çantası.",
             "Haftada bir fly (uçma) kullanım hakkı (60 DK).",
             "Creeper spawner satın alımı açılır.",
@@ -183,7 +183,7 @@ function VIPPackages() {
           name: "VIP+",
           features: [
             "Evinize ışınlanma.",
-            "Ekstra 250 claim blok.",
+            // "Ekstra 250 claim blok.",
             "İskelet spawner satın alımı açılır.",
             "Seviye 2 spawner yükseltmesi açılır.",
             "Özel spawner % 10 indirimli.",
@@ -197,7 +197,7 @@ function VIPPackages() {
           features: [
             "Evinize ışınlanma.",
             "Arkadaşlarınıza ışınlanma.",
-            "Ekstra 1000 claim blok.",
+            // "Ekstra 1000 claim blok.",
             "Ölünce düşmeyen 27 slotluk sırt çantası.",
             "Haftada bir fly (uçma) kullanım hakkı (60 DK).",
             "Creeper spawner satın alımı açılır.",
@@ -222,27 +222,27 @@ function VIPPackages() {
             "Özel spawner indirimi %5 indirimli.",
             "Özel Spawner güçlendiricileri %5 indirimli."
           ],
-          price: 200,
+          price: 299,
         },
         {
           name: "VIP+",
           features: [
             "Evinize ışınlanma.",
-            "Ekstra 250 claim blok.",
+            // "Ekstra 250 claim blok.",
             "İskelet spawner satın alımı açılır.",
             "Seviye 2 spawner yükseltmesi açılır.",
             "Özel spawner % 10 indirimli.",
             "Özel Spawner güçlendiricileri MK1 açılır.",
             "Özel Spawner güçlendiricileri % 10 indirimli.",
           ],
-          price: 400,
+          price: 499,
         },
         {
           name: "MVIP",
           features: [
             "Evinize ışınlanma.",
             "Arkadaşlarınıza ışınlanma.",
-            "Ekstra 1000 claim blok.",
+            // "Ekstra 1000 claim blok.",
             "Ölünce düşmeyen 27 slotluk sırt çantası.",
             "Haftada bir fly (uçma) kullanım hakkı (60 DK).",
             "Creeper spawner satın alımı açılır.",
@@ -251,7 +251,7 @@ function VIPPackages() {
             "Özel Spawner güçlendiricileri MK2 açılır.",
             "Özel Spawner güçlendiricileri %20 indirimli."
           ],
-          price: 800,
+          price: 999,
         },
       ],
     },
@@ -319,6 +319,9 @@ function PackageCard({ name, features, price }: { name: string; features: string
         <div className="w-full text-center text-2xl font-bold tracking-wide">₺{price}</div>
         <Button className="w-full" asChild>
           <Link href="https://donate.bynogame.com/persesciklet">PersesCiklet&#39;ı Destekle</Link>
+        </Button>
+        <Button className="w-full" asChild>
+          <Link href="https://donate.bynogame.com/aysart">AysArt&#39;ı Destekle</Link>
         </Button>
       </CardFooter>
     </Card>

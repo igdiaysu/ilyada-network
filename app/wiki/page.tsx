@@ -33,6 +33,10 @@ export default function IlyadaPage() {
           <li>Dünya sınırları düzenli olarak genişler.</li>
           {/* FIX: marker'ı görünmez oldu, buraya bak. */}
           <li className="inline-flex items-center flex-wrap">Bunun bilgisini oyun chatinden veya <Button variant="link" onClick={() => router.push("https://discord.gg/bqhTn5wMeK")} className="h-fit pt-0 pb-0"><ExternalLink />Discord&#39;taki ilgili kanaldan</Button> kanalından takip edebilirsiniz.</li>
+          {/* TODO: Server sıfırlanınca silinecek kısım. */}
+          <ul className="ml-6 list-disc [&>li]:mt-2">
+          <li className="italic">Geçici süreyle bu özellikler aktif değildir ve tüm görevler açıktır.</li>
+          </ul>
         </ul>
       </div>
 
@@ -45,14 +49,12 @@ export default function IlyadaPage() {
           <li>Bir yapı yapmadan önce, siz yokken alanınızın yağmalanmaması için claim almanız gerekmektedir.</li>
           <li>Bir altın kürek oluşturarak claim alabilirsiniz.</li>
           <li>Gelişiminize göre claim bloklarınız artar ve daha büyük bir alanı claiminize dahil edebilirsiniz.</li>
-          <li>Sunucumuzda oynamaya başladığınızda <strong>12x12&#39;lik bir claim alanında</strong> kurulabilirsiniz.
-            {/* TODO:  PersesCiklet ile konuşup hem Discord hem site güncellenmeli.*/}
-            Oyunda geliştikçe <strong>her 1 saatte 10 claim bloğu</strong> kazanırsınız.</li>
+          <li>Sunucumuzda oynamaya başladığınızda <strong>12x12&#39;lik bir claim alanında</strong> kurulabilirsiniz.</li>
           <li>Claim alanınızın içerisinde kimseye zarar verilemez.</li>
           <li>Claim alanınız içerisinde sizin yetkilendirmediğiniz hiç kimse alana blok koyamaz, yağmalayamaz.</li>
           <li>Claim alanınızın dışında yapılar, sandık koruması olmadığından sandıklar ve yapılar yağmalanabilir.</li>
           <li>Alanınızın dışına çıkmamak sizin sorumluluğunuzdadır.</li>
-          <li>Alanınızdan başka oluşumların claim alanına giremezsiniz ve claimleriniz birbirlerine çok yakın kurulmamalıdır.</li>
+          <li>Alanınızdan başka oluşumların claim alanına giremezsiniz ve claimleriniz birbirlerine <strong>en az 50 block</strong> mesafede kurulmamalıdır.</li>
         </ul>
       </div>
 
@@ -61,7 +63,7 @@ export default function IlyadaPage() {
           Claim Alma - Arazi Sahiplenme
         </h3>
         <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-          <li className="inline-flex items-center flex-wrap">&#34;Nasıl claim alıyoruz?&#34; sorusunu sormadan evvel şu videoyu izleyiniz: <Button variant="link" onClick={() => router.push("/wiki/selam")} className="h-fit pt-0 pb-0"><ExternalLink />Minecraft Claim Nasıl Atılır?</Button>
+          <li className="inline-flex items-center flex-wrap">&#34;Nasıl claim alıyoruz?&#34; sorusunu sormadan evvel şu videoyu izleyiniz: <Button variant="link" onClick={() => router.push("/wiki/selam")} className="h-fit pt-0 pb-0"><ExternalLink /><strong>Minecraft Claim Nasıl Atılır?</strong></Button>
           </li>
         </ul>
       </div>
@@ -83,7 +85,7 @@ export default function IlyadaPage() {
           Görev Sistemi
         </h2>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
-          Sunucumuzda görev tamamlayarak iyi miktarda IC ve çeşitli ödüllerin yanında VIP&#39;lik kazanabilirsiniz.
+          Sunucumuzda görev tamamlayarak iyi miktarda para ve çeşitli ödüllerin yanında VIP&#39;lik kazanabilirsiniz.
         </p>
       </div>
 
@@ -92,8 +94,8 @@ export default function IlyadaPage() {
           Görev Komutları
         </h3>
         <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-          <li>Görev ekranına <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">/q</code> komuduyla erişim sağlanır.</li>
-          <li>Aldığınız görevi iptal etmek için <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">/q cancel</code> komudunu kullanabilirsiniz.</li>
+          <li>Görev ekranına <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">/q</code> veya <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">/quest</code> komuduyla erişim sağlanır.</li>
+          <li>Aldığınız görevi iptal etmek için <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">/q cancel</code> veya <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">/quest cancel</code> komudunu kullanabilirsiniz.</li>
         </ul>
       </div>
 
@@ -105,6 +107,10 @@ export default function IlyadaPage() {
         <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
           <li>Tüm görevler “Görev Ara” görevleri tamamlanarak açılır. Bu görevleri tamamlamak için sunucumuzda bulunmanız yeterlidir.</li>
           <li>Görevler kademe kademe açılır. Her kademede daha zor görevler yapar, daha iyi ödüller alırsınız.</li>
+          {/* TODO: Server sıfırlanınca silinecek kısım. */}
+          <ul className="ml-6 list-disc [&>li]:mt-2">
+            <li className="italic">Geçici süreyle bu özellikler aktif değildir ve tüm görevler açıktır.</li>
+          </ul>
         </ul>
       </div>
 
