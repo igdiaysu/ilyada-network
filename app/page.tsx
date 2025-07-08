@@ -177,7 +177,7 @@ function VIPPackages() {
             "Özel spawner indirimi %5 indirimli.",
             "Özel Spawner güçlendiricileri %5 indirimli."
           ],
-          price: 50,
+          price: 100,
         },
         {
           name: "VIP+",
@@ -190,7 +190,7 @@ function VIPPackages() {
             "Özel Spawner güçlendiricileri MK1 açılır.",
             "Özel Spawner güçlendiricileri % 10 indirimli.",
           ],
-          price: 100,
+          price: 200,
         },
         {
           name: "MVIP",
@@ -206,7 +206,7 @@ function VIPPackages() {
             "Özel Spawner güçlendiricileri MK2 açılır.",
             "Özel Spawner güçlendiricileri %20 indirimli."
           ],
-          price: 400,
+          price: 500,
         },
       ],
     },
